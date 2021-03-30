@@ -11,6 +11,30 @@
     <a class="btn btn-success" href="{{ route('barang.create') }}"> Input Barang</a>
  </div>
 
+ <div>
+        <div class="mx-auto pull-right">
+            <div class="float-left">
+                <form action="{{ route('barang.index') }}" method="GET" role="search">
+                    <div class="input-group">
+                        <span class="input-group-btn mr-5 mt-1">
+                            <button class="btn btn-success" type="submit" title="Search Barang">
+                                <span class="fas fa-search">Pencarian</span>
+                            </button>
+                        </span>
+                        <input type="text" class="form-control mr-2" name="term" placeholder="Nama Barang" id="term">
+                        <a href="{{ route('barang.index') }}" class=" mt-1">
+                            <span class="input-group-btn">
+                                <button class="btn btn-info" type="button" title="Refresh page">
+                                    <span class="fas fa-sync-alt">Refresh</span>
+                                </button>
+                            </span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
  @if ($message = Session::get('success'))
  <div class="alert alert-success">
  <p>{{ $message }}</p>
