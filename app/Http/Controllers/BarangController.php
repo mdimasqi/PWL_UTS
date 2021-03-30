@@ -24,7 +24,7 @@ class BarangController extends Controller
             }]
         ])
         ->orderBy('id_barang','desc') 
-        ->simplePaginate(10);    
+        ->simplePaginate(20);    
         return view('index' , compact('barang'));
     }
 
