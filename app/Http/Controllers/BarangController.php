@@ -50,7 +50,7 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id_barang' => 'required',
+            // 'id_barang' => 'required',
             'kode_barang' => 'required',
             'nama_barang' => 'required',
             'kategori_barang' => 'required',
@@ -100,7 +100,7 @@ class BarangController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'id_barang' => 'required',
+            // 'id_barang' => 'required',
             'kode_barang' => 'required',
             'nama_barang' => 'required',
             'kategori_barang' => 'required',

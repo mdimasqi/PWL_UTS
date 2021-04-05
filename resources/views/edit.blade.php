@@ -22,10 +22,10 @@
             <form method="post" action="{{ route('barang.update', $barang->id_barang) }}" id="myForm">
                     @csrf
                 @method('PUT') <div class="form-group">
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="id_barang">ID_Barang</label> 
                     <input type="text" name="id_barang" class="form-control" id="id_barang" value="{{ $barang->id_barang }}" aria-describedby="id_barang" > 
-                </div>
+                </div> -->
                 <div class="form-group">
                     <label for="kode_barang">Kode Barang</label> 
                     <input type="text" name="kode_barang" class="form-control" id="kode_barang" value="{{ $barang->kode_barang }}" aria-describedby="kode_barang" > 
